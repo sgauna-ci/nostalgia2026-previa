@@ -1,183 +1,163 @@
-:root{
-  --bg: #0b0b0f;
-  --panel: rgba(255,255,255,0.08);
-  --panel2: rgba(255,255,255,0.06);
-  --text: rgba(255,255,255,0.92);
-  --muted: rgba(255,255,255,0.72);
-  --border: rgba(255,255,255,0.14);
-  --accent: #d6b25e; /* dorado nostalgia */
-  --max: 1100px;
-}
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fiesta de la Nostalgia 2026</title>
 
-*{ box-sizing:border-box; }
-html{ scroll-behavior:smooth; }
-body{
-  margin:0;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  background: var(--bg);
-  color: var(--text);
-}
+  <meta name="description" content="Fiesta de la Nostalgia 2026. Info oficial, entradas, horarios y contacto." />
+  <meta property="og:title" content="Fiesta de la Nostalgia 2026" />
+  <meta property="og:description" content="La página oficial del evento. Entradas, horarios y novedades." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/hero.jpg" />
 
-a{ color: inherit; text-decoration: none; }
-.container{ width: min(var(--max), calc(100% - 32px)); margin: 0 auto; }
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
 
-.header{
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  background: rgba(11,11,15,0.7);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border);
-}
-.header__inner{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding: 14px 0;
-  gap: 16px;
-}
-.brand{
-  font-weight: 800;
-  letter-spacing: 0.3px;
-}
-.nav{
-  display:flex;
-  gap: 14px;
-  flex-wrap: wrap;
-}
-.nav a{
-  color: var(--muted);
-  padding: 8px 10px;
-  border-radius: 10px;
-}
-.nav a:hover{ background: var(--panel2); color: var(--text); }
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="Fiesta de la Nostalgia 2026">Nostalgia 2026</a>
 
-.hero{
-  position: relative;
-  min-height: 70vh;
-  display:flex;
-  align-items: center;
-  border-bottom: 1px solid var(--border);
-}
-.hero__bg{
-  position:absolute; inset:0;
-  background:
-    linear-gradient(to bottom, rgba(11,11,15,0.35), rgba(11,11,15,0.92)),
-    url("../img/hero.jpg") center/cover no-repeat;
-  filter: saturate(1.1);
-}
-.hero__content{
-  position: relative;
-  padding: 64px 0;
-}
+      <nav class="nav" aria-label="Navegación">
+        <a href="#info">Info</a>
+        <a href="#horarios">Horarios</a>
+        <a href="#entradas">Entradas</a>
+        <a href="#ubicacion">Ubicación</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
 
-.pill{
-  display:inline-block;
-  border: 1px solid var(--border);
-  background: rgba(0,0,0,0.25);
-  padding: 8px 12px;
-  border-radius: 999px;
-  color: var(--muted);
-  margin: 0 0 14px;
-}
-h1{
-  font-size: clamp(34px, 4vw, 56px);
-  margin: 0 0 10px;
-  line-height: 1.05;
-}
-.lead{
-  font-size: clamp(16px, 1.35vw, 18px);
-  color: var(--muted);
-  max-width: 60ch;
-}
+  <main id="top">
+    <section class="hero">
+      <div class="hero__bg" role="img" aria-label="Fiesta de la Nostalgia 2026"></div>
+      <div class="container hero__content">
+        <p class="pill">Página oficial</p>
+        <h1>Fiesta de la Nostalgia 2026</h1>
+        <p class="lead">
+          Todo lo que necesitás: info, horarios, entradas y novedades.
+        </p>
 
-.section{ padding: 54px 0; }
-.section--soft{ background: rgba(255,255,255,0.03); border-top:1px solid var(--border); border-bottom:1px solid var(--border); }
-h2{ margin:0 0 18px; font-size: 26px; }
+        <div class="cta">
+          <a class="btn btn--primary" href="#entradas">Ver entradas</a>
+          <a class="btn btn--ghost" href="#contacto">Contacto</a>
+        </div>
 
-.grid{
-  display:grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
-}
-.grid--2{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        <p class="micro">
+          *Actualizaremos artistas, precios y links de compra a medida que se confirmen.
+        </p>
+      </div>
+    </section>
 
-.card{
-  background: var(--panel);
-  border: 1px solid var(--border);
-  border-radius: 18px;
-  padding: 18px;
-}
-.card h3{ margin: 0 0 8px; }
-.card p{ margin: 0; color: var(--muted); line-height: 1.5; }
+    <section id="info" class="section">
+      <div class="container">
+        <h2>Información</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Qué es</h3>
+            <p>Una noche de nostalgia: clásicos, pista, show y energía full.</p>
+          </div>
+          <div class="card">
+            <h3>Incluye</h3>
+            <p>Con tu entrada accedés a todos los segmentos del evento (según el formato que definamos).</p>
+          </div>
+          <div class="card">
+            <h3>Novedades</h3>
+            <p>Vamos a ir publicando acá: lineup, promos, precios, links oficiales.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-.list{ margin: 0; padding-left: 18px; color: var(--muted); }
-.note{ margin-top: 12px; color: var(--muted); }
+    <section id="horarios" class="section section--soft">
+      <div class="container">
+        <h2>Horarios</h2>
+        <div class="card">
+          <ul class="list">
+            <li><strong>Clase:</strong> 20:00 a 21:30</li>
+            <li><strong>Fiesta:</strong> 21:30 a 00:00</li>
+          </ul>
+          <p class="note">Si el evento cambia horarios o se agregan segmentos (banda en vivo, etc.), se actualiza acá.</p>
+        </div>
+      </div>
+    </section>
 
-.cta{
-  display:flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-top: 16px;
-}
-.btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  padding: 12px 14px;
-  border-radius: 14px;
-  border: 1px solid var(--border);
-  background: rgba(255,255,255,0.06);
-  color: var(--text);
-}
-.btn--primary{
-  border-color: rgba(214,178,94,0.55);
-  background: rgba(214,178,94,0.14);
-}
-.btn--primary:hover{ background: rgba(214,178,94,0.22); }
-.btn--ghost:hover{ background: rgba(255,255,255,0.10); }
-.btn--disabled{
-  opacity: 0.55;
-  pointer-events: none;
-}
+    <section id="entradas" class="section">
+      <div class="container">
+        <h2>Entradas</h2>
 
-.flyers{
-  display:flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-top: 10px;
-}
-.flyer{
-  padding: 10px 12px;
-  border-radius: 12px;
-  border: 1px dashed var(--border);
-  color: var(--muted);
-}
-.flyer:hover{ background: rgba(255,255,255,0.06); color: var(--text); }
+        <div class="grid grid--2">
+          <div class="card">
+            <h3>Venta oficial</h3>
+            <p>
+              Acá va el botón de compra cuando lo tengas listo (MercadoPago, transferencia, etc.).
+            </p>
+            <div class="cta">
+              <a class="btn btn--disabled" href="#" aria-disabled="true">Comprar (próximamente)</a>
+            </div>
+            <p class="micro">Tip: cuando lo actives, lo enlazamos a mercadopago.zumbaconseba.com o similar.</p>
+          </div>
 
-.link{
-  display:inline-block;
-  margin-top: 8px;
-  color: var(--accent);
-  font-weight: 700;
-}
+          <div class="card">
+            <h3>Flyers</h3>
+            <p>Versiones para compartir:</p>
+            <div class="flyers">
+              <a class="flyer" href="assets/img/flyer-1080x1350.jpg" target="_blank" rel="noreferrer">4:5 (1080×1350)</a>
+              <a class="flyer" href="assets/img/flyer-1080x1920.jpg" target="_blank" rel="noreferrer">Story (1080×1920)</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-.micro{ margin-top: 14px; color: rgba(255,255,255,0.60); font-size: 13px; }
+    <section id="ubicacion" class="section section--soft">
+      <div class="container">
+        <h2>Ubicación</h2>
+        <div class="card">
+          <p>
+            Acá va la ubicación oficial (salón/hotel + ciudad) y un link a Google Maps.
+          </p>
 
-.footer{
-  border-top: 1px solid var(--border);
-  padding: 24px 0;
-}
-.footer__inner{
-  display:flex;
-  justify-content:space-between;
-  gap: 12px;
-  flex-wrap: wrap;
-  color: rgba(255,255,255,0.62);
-}
+          <div class="cta">
+            <a class="btn btn--ghost" href="#" aria-disabled="true">Ver en Maps (próximamente)</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-@media (max-width: 900px){
-  .grid{ grid-template-columns: 1fr; }
-  .grid--2{ grid-template-columns: 1fr; }
-  .hero{ min-height: 62vh; }
-}
+    <section id="contacto" class="section">
+      <div class="container">
+        <h2>Contacto</h2>
+
+        <div class="grid grid--2">
+          <div class="card">
+            <h3>WhatsApp</h3>
+            <p>Consultas y entradas:</p>
+            <a class="link" href="https://wa.me/59892378773" target="_blank" rel="noreferrer">+598 92 378 773</a>
+          </div>
+
+          <div class="card">
+            <h3>Email</h3>
+            <p>Contacto:</p>
+            <a class="link" href="mailto:seba@zumbaconseba.com">seba@zumbaconseba.com</a>
+          </div>
+        </div>
+
+        <p class="micro">
+          Importante: esta es la web oficial. Evitá links no verificados.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Fiesta de la Nostalgia</p>
+      <p class="micro">Hecho para GitHub Pages · /2026</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

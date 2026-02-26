@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -13,48 +12,11 @@
   <meta property="og:type" content="website" />
   <meta property="og:image" content="assets/img/DSC04737.jpg" />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="assets/css/styles.css" />
-
-  <!-- Ajustes puntuales del HERO (fondo difuminado + legibilidad + título más grande) -->
-  <style>
-    .hero__bg{
-      background:
-        radial-gradient(900px 500px at 20% 10%, rgba(230,195,106,0.10), transparent 70%),
-        radial-gradient(700px 380px at 80% 0%, rgba(255,255,255,0.06), transparent 65%),
-        linear-gradient(to bottom, rgba(18,6,31,0.55), rgba(18,6,31,0.94)),
-        url("assets/img/DSC04737.jpg") center/cover no-repeat;
-      filter: blur(6px) saturate(1.1) contrast(1.05);
-      transform: scale(1.08);
-    }
-
-    .hero h1{
-      font-family: "Great Vibes", cursive;
-      font-weight: 400;
-      font-size: clamp(64px, 9vw, 124px);
-      line-height: 0.95;
-      margin: 0 0 10px;
-      text-shadow:
-        0 0 18px rgba(230,195,106,0.28),
-        0 0 46px rgba(230,195,106,0.18),
-        0 4px 30px rgba(0,0,0,0.35);
-    }
-
-    .hero .hero-lines{
-      margin-top: 10px;
-      color: rgba(255,255,255,0.84);
-      line-height: 1.5;
-    }
-    .hero .hero-lines .strong{
-      font-weight: 700;
-      letter-spacing: 0.4px;
-    }
-
-    @media (max-width: 520px){
-      .hero h1{
-        font-size: clamp(54px, 11vw, 90px);
-      }
-    }
-  </style>
 </head>
 
 <body>
@@ -67,6 +29,7 @@
         <a href="#horarios">Horarios</a>
         <a href="#entradas">Entradas</a>
         <a href="#ubicacion">Ubicación</a>
+        <a href="#revivi-2025">Reviví 2025</a>
         <a href="#contacto">Contacto</a>
       </nav>
     </div>
@@ -77,44 +40,50 @@
       <div class="hero__bg" role="img" aria-label="Fiesta de la Nostalgia 2026"></div>
 
       <div class="container hero__content">
-   <div class="hero-stack">
-  <p class="pill">Domingo 30 de Agosto</p>
+        <div class="hero-stack">
+          <p class="pill">Domingo 30 de Agosto</p>
 
-  <h1>Fiesta de la Nostalgia 2026</h1>
+          <h1>Fiesta de la Nostalgia 2026</h1>
 
-  <div class="hero-badge" aria-label="Show en vivo de Los Fatales">
-    <div class="hero-badge__inner">
-      <div class="hero-badge__top">SHOW EN VIVO</div>
-      <div class="hero-badge__main">LOS FATALES</div>
-    </div>
-  </div>
+          <div class="hero-badge" aria-label="Show en vivo de Los Fatales">
+            <div class="hero-badge__inner">
+              <div class="hero-badge__top">SHOW EN VIVO</div>
+              <div class="hero-badge__main">LOS FATALES</div>
+            </div>
+          </div>
 
-  <div class="hero-place">Hotel Radisson Montevideo</div>
+          <div class="hero-place">Hotel Radisson Montevideo</div>
 
-  <p class="lead">
-    Info oficial del evento: horarios, entradas y contacto.
-  </p>
+          <p class="lead">
+            Info oficial del evento: horarios, entradas y contacto.
+          </p>
 
-  <div class="cta hero-cta">
-    <a class="btn btn--primary" href="#entradas">Ver entradas</a>
-    <a class="btn btn--ghost" href="#contacto">Contacto</a>
-  </div>
-</div>
+          <div class="cta hero-cta">
+            <a class="btn btn--primary" href="#entradas">Adquirir tu entrada</a>
+            <a class="btn btn--ghost" href="#contacto">Contacto</a>
+          </div>
+
+          <p class="micro">
+            *Actualizaremos artistas, precios y links de compra a medida que se confirmen.
+          </p>
+        </div>
+      </div>
     </section>
-    <section id="info" class="section">
-  <div class="container">
-    <h2>Información</h2>
 
-    <div class="card info-unificada">
-      <ul class="info-list">
-        <li>📅 <strong>Domingo 30 de Agosto</strong></li>
-        <li>📍 <strong>Hotel Radisson Montevideo</strong></li>
-        <li>🏨 Plaza Independencia 759</li>
-        <li>🔞 Evento exclusivo para mayores de 18 años</li>
-      </ul>
-    </div>
-  </div>
-</section>
+    <section id="info" class="section">
+      <div class="container">
+        <h2>Información</h2>
+
+        <div class="card info-unificada">
+          <ul class="info-list">
+            <li>📅 <strong>Domingo 30 de Agosto</strong></li>
+            <li>📍 <strong>Hotel Radisson Montevideo</strong></li>
+            <li>🏨 Plaza Independencia 759</li>
+            <li>🔞 Evento exclusivo para mayores de 18 años</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
     <section id="horarios" class="section section--soft">
       <div class="container">
@@ -189,44 +158,32 @@
         </div>
       </div>
     </section>
-<section id="revivi-2025" class="section">
-  <div class="container">
-    <h2>Reviví la Nostalgia 2025</h2>
 
-    <div class="grid grid--2">
-      <div class="card">
-        <h3>La edición anterior</h3>
-        <p>
-          Mirá lo que fue la fiesta del año pasado y reviví el ambiente.
-        </p>
+    <section id="revivi-2025" class="section">
+      <div class="container">
+        <h2>Reviví la Nostalgia 2025</h2>
 
-        <div class="cta">
-          <a class="btn btn--ghost" href="https://lafiestadelanostalgia.com/" target="_blank" rel="noreferrer">
-            Ver la web de 2025
-          </a>
+        <div class="card revivi">
+          <p class="revivi__lead">
+            Mirá el resumen del año pasado y reviví el ambiente.
+          </p>
+
+          <div class="video-wrap video-wrap--reel">
+            <video class="video-card" controls preload="metadata" playsinline>
+              <source src="https://cdn.lafiestadelanostalgia.com/videos/nostalgia2025-fullvideo.mp4" type="video/mp4">
+              Tu navegador no soporta video HTML5.
+            </video>
+          </div>
+
+          <div class="revivi__actions">
+            <a class="btn btn--ghost" href="https://lafiestadelanostalgia.com/" target="_blank" rel="noreferrer">
+              Ver la web del año pasado
+            </a>
+          </div>
         </div>
-
-        <p class="micro">
-          Consejo: compartilo con tu grupo y vayan calentando motores 😉
-        </p>
       </div>
+    </section>
 
-      <div class="card">
-        <h3>Video resumen 2025</h3>
-
-        <div class="video-wrap">
-          <video class="video-card" controls preload="metadata" playsinline>
-            <source src="https://cdn.lafiestadelanostalgia.com/videos/nostalgia2025-fullvideo.mp4" type="video/mp4">
-            Tu navegador no soporta video HTML5.
-          </video>
-        </div>
-        <p class="micro">
-          Si no te carga, probá actualizar o abrir desde otro navegador.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
     <section id="contacto" class="section">
       <div class="container">
         <h2>Contacto</h2>
@@ -266,6 +223,13 @@
     </div>
   </footer>
 
+  <script>
+    // Year fallback (por si no existe assets/js/main.js)
+    (function(){
+      var el = document.getElementById("year");
+      if (el) el.textContent = new Date().getFullYear();
+    })();
+  </script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>

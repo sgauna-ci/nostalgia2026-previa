@@ -1,1 +1,1 @@
-document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById('year')?.appendChild(document.createTextNode(new Date().getFullYear()));

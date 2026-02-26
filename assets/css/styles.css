@@ -576,4 +576,19 @@ h2{
   margin-left: auto;
   margin-right: auto;
 }
+.contacto-unificado{
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
 
+.contacto-item{
+  font-size: 18px;
+  margin: 12px 0;
+}
+
+.contacto-item a{
+  color: var(--gold);
+  font-weight: 800;
+  text-decoration: none;
+}

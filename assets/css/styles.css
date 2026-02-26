@@ -452,7 +452,7 @@ h2{
   justify-content: center;
   gap: 2px;
   line-height: 1;
-  margin-top: 8px;
+  margin-top: 6px;
   font-size: 28px;
 }
 .hero-badge__main span{ display:block; }

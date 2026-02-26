@@ -437,3 +437,150 @@ h2{
     margin-top: 8px;
   }
 }
+/* =========================
+   HERO pro (mobile-first)
+   ========================= */
+.hero__content{
+  text-align: center;
+  max-width: 780px;
+}
+
+/* Stack vertical, espaciado controlado */
+.hero-stack{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.hero-stack .pill{
+  margin: 0;
+}
+
+.hero-stack .lead{
+  margin: 0;
+  max-width: 62ch;
+}
+
+/* Lugar con peso y legibilidad */
+.hero-place{
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  color: rgba(255,255,255,0.88);
+}
+
+/* CTA más usable en mobile */
+.hero-cta{
+  width: 100%;
+  justify-content: center;
+  gap: 12px;
+}
+
+.hero-cta .btn{
+  min-height: 46px;
+  padding: 12px 16px;
+}
+
+@media (max-width: 520px){
+  .hero-cta{
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .hero-cta .btn{
+    width: 100%;
+  }
+}
+
+/* =========================
+   Burst badge (pro + visible)
+   ========================= */
+.hero-badge{
+  width: 210px;
+  aspect-ratio: 1 / 1;
+  display: grid;
+  place-items: center;
+
+  background: radial-gradient(circle at 30% 30%, #ffe29a, #e6c36a 45%, #cfa94a 100%);
+  color: #1b0b2e;
+
+  box-shadow:
+    0 18px 45px rgba(0,0,0,0.45),
+    0 0 34px rgba(230,195,106,0.55);
+
+  transform: rotate(-10deg);
+  border: 2px solid rgba(0,0,0,0.12);
+
+  clip-path: polygon(
+    50% 0%,
+    57% 6%,
+    66% 2%,
+    70% 10%,
+    79% 7%,
+    80% 16%,
+    90% 16%,
+    87% 25%,
+    96% 30%,
+    88% 36%,
+    94% 45%,
+    84% 46%,
+    86% 56%,
+    76% 52%,
+    74% 62%,
+    66% 56%,
+    62% 66%,
+    54% 60%,
+    48% 70%,
+    42% 62%,
+    36% 70%,
+    32% 60%,
+    24% 66%,
+    22% 56%,
+    14% 56%,
+    16% 46%,
+    6% 45%,
+    12% 36%,
+    4% 30%,
+    13% 25%,
+    10% 16%,
+    20% 16%,
+    21% 7%,
+    30% 10%,
+    34% 2%,
+    43% 6%
+  );
+}
+
+.hero-badge__inner{
+  text-align: center;
+  transform: rotate(10deg);
+  padding: 10px;
+}
+
+.hero-badge__top{
+  font-weight: 900;
+  letter-spacing: 1.2px;
+  font-size: 13px;
+}
+
+.hero-badge__main{
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-size: 26px;
+  line-height: 1.0;
+  margin-top: 8px;
+}
+
+/* Mobile: un poquito más grande para que resalte */
+@media (max-width: 520px){
+  .hero-badge{
+    width: 230px;
+    transform: rotate(-8deg);
+  }
+  .hero-badge__top{ font-size: 12px; }
+  .hero-badge__main{ font-size: 28px; }
+}
+
+/* Fallback si no hay clip-path */
+@supports not (clip-path: polygon(0 0)){
+  .hero-badge{ border-radius: 999px; clip-path: none; }
+}

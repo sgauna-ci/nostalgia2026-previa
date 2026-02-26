@@ -584,3 +584,20 @@ h2{
 @supports not (clip-path: polygon(0 0)){
   .hero-badge{ border-radius: 999px; clip-path: none; }
 }
+.video-wrap{
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(0,0,0,0.25);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.35);
+  aspect-ratio: 16 / 9;
+}
+
+.video-card{
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: #000;
+  object-fit: cover;
+}

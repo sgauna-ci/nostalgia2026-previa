@@ -103,7 +103,7 @@ a:focus{
 /* ---------------- Hero ---------------- */
 .hero{
   position: relative;
-  min-height: 78vh;
+  min-height: 86vh;
   display: flex;
   align-items: center;
   border-bottom: 1px solid var(--border);
@@ -548,7 +548,7 @@ h2{
 @media (max-width: 900px){
   .grid{ grid-template-columns: 1fr; }
   .grid--2{ grid-template-columns: 1fr; }
-  .hero{ min-height: 70vh; }
+  .hero{ min-height: 78vh; }
   .header__inner{ padding: 12px 0; }
 }
 
@@ -608,4 +608,25 @@ h2{
 }
 @media (max-width: 520px){
   .info-list--compact li{ font-size: 16px; }
+}
+
+
+/* --- Hero small brand (no header) --- */
+.hero-brand{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--gold);
+  opacity: 0.92;
+  text-shadow: 0 0 18px rgba(230,195,106,0.25);
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* Make sure first section isn't hidden by browser UI on mobile */
+@media (max-width: 520px){
+  .hero{ min-height: 82vh; }
 }

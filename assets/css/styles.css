@@ -377,3 +377,29 @@ h2{
   .nav a{ padding: 8px 8px; }
   .hero__content{ padding: 62px 0; }
 }
+/* Info unificada */
+.info-unificada{
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.info-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-list li{
+  font-size: 18px;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.92);
+  margin: 10px 0;
+  letter-spacing: 0.3px;
+}
+
+@media (max-width: 520px){
+  .info-list li{
+    font-size: 16px;
+  }
+}

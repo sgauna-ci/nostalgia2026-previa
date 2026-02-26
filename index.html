@@ -82,9 +82,12 @@
         <h1>Fiesta de la Nostalgia 2026</h1>
 
         <div class="hero-lines">
-          <div class="hero-sticker" aria-label="Show en vivo de Los Fatales">
-            ⭐ Show en vivo de <strong>Los Fatales</strong>
-          </div>
+          <div class="hero-badge" aria-label="Show en vivo de Los Fatales">
+            <div class="hero-badge__inner">
+              <div class="hero-badge__top">SHOW EN VIVO</div>
+              <div class="hero-badge__main">LOS FATALES</div>
+            </div>
+          </div>        
           <div class="hero-place">Hotel Radisson Montevideo</div>
         </div>
 
@@ -215,11 +218,12 @@
       <div class="card">
         <h3>Video resumen 2025</h3>
 
-        <video class="video-card" controls preload="metadata">
-          <source src="https://cdn.lafiestadelanostalgia.com/videos/nostalgia2025-fullvideo.mp4" type="video/mp4">
-          Tu navegador no soporta video HTML5.
-        </video>
-
+        <div class="video-wrap">
+          <video class="video-card" controls preload="metadata" playsinline>
+            <source src="https://cdn.lafiestadelanostalgia.com/videos/nostalgia2025-fullvideo.mp4" type="video/mp4">
+            Tu navegador no soporta video HTML5.
+          </video>
+        </div>
         <p class="micro">
           Si no te carga, probá actualizar o abrir desde otro navegador.
         </p>

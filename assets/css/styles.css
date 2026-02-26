@@ -429,8 +429,8 @@ h2{
 
 .hero-badge__inner{
   text-align: center;
-  transform: rotate(10deg) translateY(-10px); /* <-- AJUSTE ACÁ */
-  padding: 12px 10px 10px;
+  transform: rotate(10deg);
+  padding: 4px 10px 10px; /* 👈 ESTE valor SUBE el texto */
 }
 
 

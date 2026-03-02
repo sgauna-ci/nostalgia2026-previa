@@ -360,6 +360,14 @@ h2{
   text-align: center;
 }
 
+.info-intro{
+  max-width: 58ch;
+  margin: 0 auto 22px;
+  color: rgba(255,255,255,0.86);
+  line-height: 1.65;
+  font-size: 17px;
+}
+
 .info-list{
   list-style: none;
   padding: 0;
@@ -374,6 +382,55 @@ h2{
   letter-spacing: 0.3px;
 }
 
+.info-experience{
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.info-experience h3{
+  margin: 0 0 12px;
+  font-size: 19px;
+  color: var(--gold);
+  letter-spacing: 0.3px;
+}
+
+.info-experience p{
+  margin: 0 auto 12px;
+  max-width: 58ch;
+  color: rgba(255,255,255,0.84);
+  line-height: 1.7;
+}
+
+.info-highlights{
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  text-align: left;
+}
+
+.info-highlight{
+  padding: 16px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.04);
+}
+
+.info-highlight strong{
+  display: block;
+  margin-bottom: 6px;
+  color: var(--gold);
+  font-size: 15px;
+}
+
+.info-highlight span{
+  display: block;
+  color: rgba(255,255,255,0.8);
+  line-height: 1.55;
+  font-size: 14px;
+}
+
 /* ---------------- Burst badge (Los Fatales) ---------------- */
 .hero-badge{
   width: clamp(170px, 38vw, 220px);
@@ -385,7 +442,7 @@ h2{
   box-shadow:
     0 18px 45px rgba(0,0,0,0.45),
     0 0 34px rgba(230,195,106,0.55);
-  transform: rotate(-8deg);
+  transform: rotate(-8deg) translateY(10px);
   border: 2px solid rgba(0,0,0,0.12);
   clip-path: polygon(
     50% 0%,
@@ -428,16 +485,23 @@ h2{
 }
 
 .hero-badge__inner{
+  width: 74%;
+  min-height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  transform: rotate(10deg);
-  padding: 0px 10px 10px; /* 👈 ESTE valor SUBE el texto */
+  transform: rotate(8deg) translate(-8px, -34px);
+  padding: 8px 10px 0;
 }
 
 
 .hero-badge__top{
   font-weight: 900;
-  letter-spacing: 1.2px;
-  font-size: 12px;
+  letter-spacing: 1px;
+  font-size: clamp(10px, 1.05vw, 12px);
+  line-height: 1.05;
   margin: 0;
   text-transform: uppercase;
 }
@@ -445,17 +509,18 @@ h2{
 
 .hero-badge__main{
   font-weight: 900;
-  letter-spacing: 1px;
+  letter-spacing: 0.4px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2px;
-  line-height: 1;
+  gap: 0;
+  line-height: 0.92;
   margin-top: 6px;
-  font-size: 28px;
+  font-size: clamp(22px, 2.7vw, 28px);
 }
 .hero-badge__main span{ display:block; }
+.hero-badge__main span:last-child{ font-size: 0.92em; }
 
 
 @supports not (clip-path: polygon(0 0)){
@@ -569,6 +634,8 @@ h2{
     padding: 12px 16px;
   }
   .info-list li{ font-size: 16px; }
+  .info-intro{ font-size: 16px; }
+  .info-highlights{ grid-template-columns: 1fr; }
   .hero-badge{ width: min(210px, 62vw); transform: rotate(-6deg); }
   
   

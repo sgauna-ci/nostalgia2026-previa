@@ -140,7 +140,7 @@ a:focus{
 
 .hero__content{
   position: relative;
-  padding: 70px 0;
+  padding: 82px 0 72px;
   text-align: center;
   max-width: 780px;
 }
@@ -149,16 +149,16 @@ a:focus{
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 14px;
+  gap: 16px;
 }
 
 .pill{
   display: inline-block;
-  padding: 8px 12px;
+  padding: 9px 16px;
   border-radius: 999px;
   border: 1px solid rgba(230,195,106,0.28);
-  background: rgba(0,0,0,0.20);
-  color: var(--muted);
+  background: rgba(8,3,14,0.42);
+  color: rgba(255,255,255,0.9);
   box-shadow: var(--shadow-gold);
   margin: 0;
 }
@@ -179,8 +179,9 @@ a:focus{
 
 .hero-place{
   font-weight: 800;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.4px;
   color: rgba(255,255,255,0.88);
+  text-shadow: 0 6px 24px rgba(0,0,0,0.28);
 }
 
 .lead{
@@ -202,6 +203,7 @@ a:focus{
   width: 100%;
   justify-content: center;
   gap: 12px;
+  margin-top: 8px;
 }
 
 .btn{
@@ -240,6 +242,7 @@ a.btn:visited{ color: inherit; }
   color: #2a0f45;
   font-weight: 800;
   box-shadow: var(--shadow-gold);
+  padding-inline: 22px;
 }
 
 .btn--primary:hover{
@@ -606,6 +609,7 @@ h2{
 .footer__inner{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 12px;
   flex-wrap: wrap;
   color: var(--micro);
@@ -626,6 +630,7 @@ h2{
   .nav a{ padding: 8px 8px; }
   .hero__content{ padding: 62px 0; }
   .hero h1{ font-size: clamp(54px, 11vw, 90px); }
+  .pill{ padding: 8px 14px; }
   .hero-cta{
     flex-direction: column;
     align-items: stretch;

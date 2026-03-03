@@ -1,1 +1,5 @@
-document.getElementById('year')?.appendChild(document.createTextNode(new Date().getFullYear()));
+const yearEl = document.getElementById('year');
+
+if (yearEl) {
+  yearEl.textContent = String(new Date().getFullYear());
+}

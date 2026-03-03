@@ -386,9 +386,7 @@ h2{
 }
 
 .info-experience{
-  margin-top: 28px;
-  padding-top: 24px;
-  border-top: 1px solid rgba(255,255,255,0.1);
+  margin-top: 0;
 }
 
 .info-experience h3{
@@ -411,6 +409,12 @@ h2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
   text-align: left;
+}
+
+.info-summary{
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255,255,255,0.1);
 }
 
 .info-highlight{
@@ -550,6 +554,36 @@ h2{
   justify-content: center;
 }
 
+.revivi-gallery{
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.revivi-shot{
+  display: block;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.04);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.28);
+  transition: transform 140ms ease, border-color 140ms ease, box-shadow 140ms ease;
+}
+
+.revivi-shot:hover{
+  transform: translateY(-2px);
+  border-color: rgba(230,195,106,0.45);
+  box-shadow: 0 16px 32px rgba(0,0,0,0.34);
+}
+
+.revivi-shot img{
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  display: block;
+  object-fit: cover;
+}
+
 .video-wrap{
   width: 100%;
   border-radius: 16px;
@@ -579,6 +613,15 @@ h2{
 
 @media (max-width: 520px){
   .video-wrap--reel{ max-width: 280px; }
+  .revivi-gallery{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 820px){
+  .revivi-gallery{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 .video-card{

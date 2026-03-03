@@ -437,90 +437,92 @@ h2{
   aspect-ratio: 1 / 1;
   display: grid;
   place-items: center;
-  background: radial-gradient(circle at 30% 30%, #ffe29a, #e6c36a 45%, #cfa94a 100%);
+  padding: 24px;
+  background: radial-gradient(circle at 50% 42%, #ffe8a8, #e6c36a 52%, #cfa94a 100%);
   color: #1b0b2e;
   box-shadow:
     0 18px 45px rgba(0,0,0,0.45),
     0 0 34px rgba(230,195,106,0.55);
-  transform: rotate(-8deg) translateY(10px);
+  transform: rotate(-7deg) translateY(10px);
   border: 2px solid rgba(0,0,0,0.12);
   clip-path: polygon(
     50% 0%,
-    57% 6%,
-    66% 2%,
-    70% 10%,
-    79% 7%,
-    80% 16%,
-    90% 16%,
-    87% 25%,
-    96% 30%,
-    88% 36%,
-    94% 45%,
-    84% 46%,
-    86% 56%,
-    76% 52%,
-    74% 62%,
-    66% 56%,
-    62% 66%,
-    54% 60%,
-    48% 70%,
-    42% 62%,
-    36% 70%,
-    32% 60%,
-    24% 66%,
-    22% 56%,
-    14% 56%,
-    16% 46%,
-    6% 45%,
-    12% 36%,
-    4% 30%,
-    13% 25%,
-    10% 16%,
-    20% 16%,
-    21% 7%,
-    30% 10%,
-    34% 2%,
-    43% 6%
+    58% 10%,
+    70% 4%,
+    74% 17%,
+    87% 13%,
+    86% 27%,
+    100% 30%,
+    91% 41%,
+    99% 50%,
+    91% 59%,
+    100% 70%,
+    86% 73%,
+    87% 87%,
+    74% 83%,
+    70% 96%,
+    58% 90%,
+    50% 100%,
+    42% 90%,
+    30% 96%,
+    26% 83%,
+    13% 87%,
+    14% 73%,
+    0% 70%,
+    9% 59%,
+    1% 50%,
+    9% 41%,
+    0% 30%,
+    14% 27%,
+    13% 13%,
+    26% 17%,
+    30% 4%,
+    42% 10%
   );
 }
 
 .hero-badge__inner{
-  width: 74%;
-  min-height: 70%;
+  width: 100%;
+  max-width: 132px;
+  min-height: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  transform: rotate(8deg) translate(-8px, -34px);
-  padding: 8px 10px 0;
+  transform: rotate(7deg);
+  padding: 0;
 }
 
 
 .hero-badge__top{
   font-weight: 900;
-  letter-spacing: 1px;
-  font-size: clamp(10px, 1.05vw, 12px);
-  line-height: 1.05;
-  margin: 0;
+  letter-spacing: 1.2px;
+  font-size: clamp(10px, 1vw, 12px);
+  line-height: 1.1;
+  margin: 0 0 8px;
   text-transform: uppercase;
 }
 
 
 .hero-badge__main{
   font-weight: 900;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.2px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0;
-  line-height: 0.92;
-  margin-top: 6px;
-  font-size: clamp(22px, 2.7vw, 28px);
+  gap: 2px;
+  line-height: 0.9;
+  margin-top: 0;
+  font-size: clamp(23px, 2.9vw, 30px);
+  text-transform: uppercase;
 }
-.hero-badge__main span{ display:block; }
-.hero-badge__main span:last-child{ font-size: 0.92em; }
+.hero-badge__main span{
+  display: block;
+  width: 100%;
+}
+.hero-badge__main span:last-child{ font-size: 0.93em; }
 
 
 @supports not (clip-path: polygon(0 0)){
